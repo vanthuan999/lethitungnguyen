@@ -309,3 +309,15 @@ continueBtn.addEventListener("click", () => {
 // ==========================
 
 console.log("Graduation Invitation Ready ❤️");
+
+// Phát nhạc khi người dùng bấm nút MỞ THIỆP
+document.getElementById('openBtn').addEventListener('click', function() {
+    var audio = document.getElementById('myAudio');
+    if (audio) {
+        audio.play().then(function() {
+            console.log("Đã phát nhạc thành công!");
+        }).catch(function(error) {
+            console.log("Lỗi phát nhạc: ", error);
+        });
+    }
+});
