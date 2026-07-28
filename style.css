@@ -1,0 +1,671 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#ffeaf3;
+
+    color:#444;
+
+    overflow-x:hidden;
+
+}
+
+section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    padding:60px 20px;
+
+}
+
+h1,h2,h3{
+
+    text-align:center;
+
+}
+
+p{
+
+    text-align:center;
+
+    line-height:1.8;
+
+}
+
+#loading{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#ffd9ea;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:99999;
+
+}
+
+.loading-heart{
+
+    font-size:70px;
+
+    animation:heart 1s infinite;
+
+}
+
+@keyframes heart{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.2);}
+
+100%{transform:scale(1);}
+
+}
+
+#welcome{
+
+    position:relative;
+
+    background:linear-gradient(135deg,#ffd5e8,#fff4fa);
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+.welcome-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:700px;
+
+}
+
+.welcome-content h3{
+
+    color:#ff4d94;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+}
+
+.welcome-content h1{
+
+    font-size:60px;
+
+    color:#d81b60;
+
+    margin-bottom:20px;
+
+}
+
+.welcome-content p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+button{
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff4d94;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#e91e63;
+
+}
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+#hero{
+
+    position:relative;
+
+    background:linear-gradient(180deg,#fff0f7,#ffe2ef);
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.graduate{
+
+    color:#ff5a99;
+
+    font-size:18px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+}
+
+.hero-content h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:72px;
+
+    color:#d81b60;
+
+    margin:25px 0;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+
+}
+
+
+
+/* ========================= */
+/* ENVELOPE */
+/* ========================= */
+
+#envelopeSection{
+
+    background:#fff5fa;
+
+}
+
+.envelope{
+
+    width:340px;
+
+    height:230px;
+
+    position:relative;
+
+    background:#ffc3dc;
+
+    border-radius:10px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.top{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:#ff8fbd;
+
+    clip-path:polygon(0 0,100% 0,50% 60%);
+
+}
+
+.letter{
+
+    position:absolute;
+
+    left:20px;
+
+    right:20px;
+
+    bottom:20px;
+
+    background:white;
+
+    border-radius:8px;
+
+    padding:20px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.letter h2{
+
+    color:#e91e63;
+
+    margin-bottom:15px;
+
+}
+
+#continueBtn{
+
+    margin-top:20px;
+
+    width:100%;
+
+}
+
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.card{
+
+    background:white;
+
+    max-width:900px;
+
+    width:100%;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.1);
+
+}
+
+.card h2{
+
+    color:#e91e63;
+
+    margin-bottom:25px;
+
+}
+
+.invite-text{
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
+
+.info{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.info div{
+
+    width:250px;
+
+    background:#fff4fa;
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+.info h3{
+
+    margin:15px 0;
+
+    color:#d81b60;
+
+}
+/* ========================= */
+/* COUNTDOWN */
+/* ========================= */
+
+.countdown{
+
+    margin-top:50px;
+
+}
+
+.countdown h3{
+
+    color:#e91e63;
+
+    margin-bottom:25px;
+
+}
+
+#timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+#timer div{
+
+    width:110px;
+
+    height:110px;
+
+    background:#ff5a99;
+
+    color:white;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+#timer span{
+
+    font-size:38px;
+
+    font-weight:bold;
+
+}
+
+#timer small{
+
+    margin-top:5px;
+
+}
+
+
+
+/* ========================= */
+/* GALLERY */
+/* ========================= */
+
+#gallery{
+
+    background:#fff7fb;
+
+}
+
+.gallery-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.photo{
+
+    width:320px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.photo:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.photo img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+/* ========================= */
+/* MESSAGE */
+/* ========================= */
+
+.message-card{
+
+    max-width:900px;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.1);
+
+}
+
+.message-card h2{
+
+    color:#e91e63;
+
+    margin-bottom:30px;
+
+}
+
+.message-card p{
+
+    margin:15px 0;
+
+}
+
+
+
+/* ========================= */
+/* LOCATION */
+/* ========================= */
+
+#location{
+
+    background:#ffeaf3;
+
+}
+
+.map-btn{
+
+    margin-top:30px;
+
+    background:#ff4d94;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.map-btn:hover{
+
+    background:#d81b60;
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ========================= */
+/* CLOSING */
+/* ========================= */
+
+#closing{
+
+    background:linear-gradient(#fff7fb,#ffd7e8);
+
+}
+
+.closing-card{
+
+    background:white;
+
+    max-width:700px;
+
+    width:100%;
+
+    border-radius:30px;
+
+    padding:60px 40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    color:#d81b60;
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:46px;
+
+}
+
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+.welcome-content h1{
+
+font-size:42px;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.photo{
+
+width:100%;
+
+}
+
+#timer div{
+
+width:80px;
+
+height:80px;
+
+}
+
+#timer span{
+
+font-size:28px;
+
+}
+
+.signature{
+
+font-size:36px;
+
+}
+
+}
