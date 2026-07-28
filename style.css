@@ -669,3 +669,29 @@ font-size:36px;
 }
 
 }
+#rsvp{
+    text-align:center;
+    margin:80px auto;
+}
+
+#rsvp p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.rsvp-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff6fa5;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.rsvp-btn:hover{
+    background:#ff4f90;
+    transform:scale(1.05);
+}
